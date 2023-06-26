@@ -1,0 +1,10 @@
+steps:
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: '/bin/bash'
+  args: 
+  - '-c' 
+  - | 
+    echo Version: $SHORT_SHA > ./version.txt
+    echo Timestamp: `TZ=UTC-5:30 date -R` >> ./version.txt
+    gcloud compute scp --recurse --tunnel-through-iap $(pwd)/* cloudbuild@${_GCE_INSTANCE_NAME}:/var/www/html --zone=${_GCE_INSTANCE_ZONE}
+  
