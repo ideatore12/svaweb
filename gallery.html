@@ -48,16 +48,79 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
   <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"/>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
+  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
+  
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
 
 
     <style>
       a.navbar-brand img {
         max-width: 90px;
       }
+      
+      
+      .filter-button {
+    font-size: 18px;
+     border: 1px solid #35599e; 
+     border-radius: 5px; 
+    text-align: center;
+    color: #35599e;
+    margin-bottom: 10px;
+        border: none;
+}
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+/*.filter-button:hover {*/
+/*    font-size: 18px;*/
+/*    border: 1px solid #ffc10e;*/
+/*    border-radius: 5px;*/
+/*    text-align: center;*/
+/*    color: #35599e;*/
+/*    background-color: #35599e;*/
+/*}*/
+
+.filter-button:hover {
+    font-size: 18px;
+    border: 1px solid #ffc10e;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #1c4594;
+}
+
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+} 
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #1c4594;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #1c4594;
+    border-color: #337ab7;
+    color: #ffffff;
+} 
+
+
     </style>
   </head>
 
   <body>
+      
     <div class="container-fluid bg-white p-0">
       <!-- Spinner Start -->
       <div
@@ -75,6 +138,7 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
       <!-- Spinner End -->
 
       <!-- Navbar Start -->
+    <!-- Navbar Start -->
       <nav
         class="navbar custom_navbar navbar-expand-lg navbar-light sticky-top px-4 px-lg-5 py-lg-0"
       >
@@ -92,17 +156,15 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav mx-auto">
             <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About us</a>
+            <a href="about.html" class="nav-item nav-link ">About us</a>
             <a href="academic.html" class="nav-item nav-link">Academic</a>
             <a href="Admission.html" class="nav-item nav-link"> Admission</a>
             <!-- <a href="notice_board.html" class="nav-item nav-link">Notice Board</a> -->
             <a href="gallery.html" class="nav-item nav-link active"> Gallery</a>
             <!-- <a href="career.html" class="nav-item nav-link"> Career</a> -->
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a> 
           </div>
-          
-          
-            <div id="google_translate_element"></div>
+         <div id="google_translate_element"></div>
 
           <script type="text/javascript">
             function googleTranslateElementInit() {
@@ -112,13 +174,15 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
             }, 'google_translate_element');
             }
            </script>
-           
-           <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+           <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          
           <a href="javascript:void(0)" class="btn btn-primary rounded-pill px-3 mx-auto  d-lg-block"
             >Apply Now<i class="fa fa-arrow-right ms-3"></i
           ></a>
         </div>
       </nav>
+
+      <!-- Navbar End -->
 
       <!-- Navbar End -->
 
@@ -132,30 +196,79 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
             <h1 class="mb-3 text-center">Gallery</h1>
         </div>
 
-        <div align="center">
-            <button class="btn btn-default filter-button" data-filter="all">All</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">Campus</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">Academic Block</button>
-            <button class="btn btn-default filter-button" data-filter="spray">Sport & Gym</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">Hostels</button>
-        </div>
-        <br/>
+  <ul class="nav nav-tabs">
+  <!--<li class="nav-item">-->
+  <!--  <a class="nav-link active" aria-current="page" href="#">Active</a>-->
+  <!--</li>-->
+  <li class="nav-item dropdown">
+    <a class="nav-link active dropdown-toggle filter-button" data-bs-toggle="dropdown" data-filter="hdpe" >Campus</a>
+    <ul class="dropdown-menu">
+     <li class="filter-button" data-filter="sprinkle" >Academic Block</li>
+        <li class="filter-button" data-filter="spray" >Sport & Gym</li>
+        <li class="filter-button" data-filter="irrigation">Hostel</li> 
+    </ul>
+  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle filter-button" data-bs-toggle="dropdown" data-filter="hdpe">Event</a>
+    <ul class="dropdown-menu">
+     <li class="filter-button" data-filter="induction" >Induction Day</li>
+        <li class="filter-button" data-filter="dahi" >Dahi Handi Celebration</li>
+        <li class="filter-button" data-filter="ganpati">Ganpati Celebration</li>
+        <li class="filter-button" data-filter="postal">Postal Day Celebration</li>  
+    </ul>
+  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle filter-button" data-bs-toggle="dropdown" data-filter="hdpe">Sport</a>
+    <ul class="dropdown-menu">
+    <li class="filter-button" data-filter="morning">Morning Exercise</li>
+    </ul>
+  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle filter-button" data-bs-toggle="dropdown" data-filter="hdpe">Student Life</a>
+    <ul class="dropdown-menu">
+      <li class="filter-button" data-filter="art-1">Art workshop</li>
+        <li class="filter-button" data-filter="fireless">Fireless cooking competition</li>
+        <li class="filter-button" data-filter="skit">Skit competition</li>
+        <li class="filter-button" data-filter="dance">Dance competition</li>
+        <li class="filter-button" data-filter="singing">Singing Competition</li>        
+        <li class="filter-button" data-filter="school">School Election</li>  
+    </ul>
+  </li>
+ 
+</ul>
+</div>
+</div>
+
+ 
+
+        <!--<div align="center">-->
+        <!--    <button class="btn btn-default filter-button" data-filter="all">All</button>-->
+        <!--    <button class="btn btn-default filter-button" data-filter="hdpe">Campus</button>-->
+        <!--    <button class="btn btn-default filter-button" data-filter="sprinkle">Academic Block</button>-->
+        <!--    <button class="btn btn-default filter-button" data-filter="spray">Sport & Gym</button>-->
+        <!--    <button class="btn btn-default filter-button" data-filter="irrigation">Hostels</button>-->
+        <!--</div>-->
+        <!--<br/>-->
 
                                           <!-- campus -->
-
-        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+   <div class="container">
+       <div class="row">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe mt-5">
         <a href="img/Campus/01.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
           <img src="img/Campus/01.jpg" class="card-img-top" alt="sva_sports">
       </a>
       </div>
 
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe mt-5">
         <a href="img/Campus/02.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
         <img src="img/Campus/02.jpg" class="card-img-top" alt="sva_sports">
       </a>
       </div>
             
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe mt-5">
         <a href="img/Campus/03.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
           <img src="img/Campus/03.jpg" class="card-img-top" alt="sva_sports">
       </a>
@@ -228,19 +341,19 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
                    
                                     <!-- Acedemic Block -->
                             
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle mt-5">
         <a href="img/Acedemic Block/acedemic_block_01.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
           <img src="img/Acedemic Block/acedemic_block_01.JPG" class="card-img-top" alt="sva_sports">
       </a>
       </div>
 
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle mt-5">
         <a href="img/Acedemic Block/acedemic_block_02.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
         <img src="img/Acedemic Block/acedemic_block_02.JPG" class="card-img-top" alt="sva_sports">
       </a>
       </div>
             
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle mt-5">
         <a href="img/Acedemic Block/acedemic_block_03.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
           <img src="img/Acedemic Block/acedemic_block_03.JPG" class="card-img-top" alt="sva_sports">
       </a>
@@ -267,20 +380,20 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
      
                                 <!-- Sport & Gym -->
            
-        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray mt-5">
         <a href="img/Sports & Gym/sva_sports_01.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
           <img src="img/Sports & Gym/sva_sports_01.JPG" class="card-img-top" alt="sva_sports">
       </a>
       </div>
 
 
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray mt-5">
         <a href="img/Sports & Gym/sva_sports_02.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
           <img src="img/Sports & Gym/sva_sports_02.JPG" class="card-img-top" alt="sva_sports">
       </a>
       </div>
             
-      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+      <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray mt-5">
         <a href="img/Sports & Gym/sva_sports_03.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
           <img src="img/Sports & Gym/sva_sports_03.JPG" class="card-img-top" alt="sva_sports">
       </a>
@@ -297,7 +410,7 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
             <img src="img/Sports & Gym/sva_sports_05.JPG" class="card-img-top" alt="sva_sports">
         </a>
         </div>
-        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray ">
         <a href="img/Sports & Gym/sva_sports_06.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
           <img src="img/Sports & Gym/sva_sports_06.JPG" class="card-img-top" alt="sva_sports">
       </a>
@@ -308,24 +421,456 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
            
 
 
-          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation mt-5">
             <a href="img/Hostel/sva_hostel_02.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
               <img src="img/Hostel/sva_hostel_02.JPG" class="card-img-top" alt="sva_hostel">
           </a>
           </div>
                 
-          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation mt-5">
             <a href="img/Hostel/sva_hostel_03.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
               <img src="img/Hostel/sva_hostel_03.JPG" class="card-img-top" alt="sva_hostel">
           </a>
           </div>
-          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation mt-5">
           <a href="img/Hostel/sva_hostel_04.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">
             <img src="img/Hostel/sva_hostel_04.JPG" class="card-img-top" alt="sva_hostel">
         </a>
             </div>
+            
+                                        <!--Event-->
+                                        
+                                        <!--Induction Day-->
+                            
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction mt-5">
+            <a href="img/gallery/admission-1-day/DSC_4254.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-1-day/DSC_4254.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+                
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction mt-5">
+            <a href="img/gallery/admission-1-day/DSC_4255.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-1-day/DSC_4255.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction mt-5">
+          <a href="img/gallery/admission-1-day/DSC_4293.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+          <img src="img/gallery/admission-1-day/DSC_4293.jpg" class="card-img-top" alt="sva_hostel">
+         </a>
+        </div>
+        
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-1-day/DSC_4328.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-1-day/DSC_4328.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+                
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-1-day/DSC_4341.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-1-day/DSC_4341.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+          <a href="img/gallery/admission-1-day/DSC_4356.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+          <img src="img/gallery/admission-1-day/DSC_4356.jpg" class="card-img-top" alt="sva_hostel">
+         </a>
+        </div>
+        
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-1-day/DSC_4364.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-1-day/DSC_4364.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+                
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-1-day/DSC_4403..jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-1-day/DSC_4403.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+          <a href="img/gallery/admission-1-day/DSC_4407.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+          <img src="img/gallery/admission-1-day/DSC_4407.jpg" class="card-img-top" alt="sva_hostel">
+         </a>
+        </div>
+        
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-1-day/DSC_4420.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-1-day/DSC_4420.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+                
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-1-day/DSC_4453.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-1-day/DSC_4453.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+          <a href="img/gallery/admission-1-day/DSC_4456.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+          <img src="img/gallery/admission-1-day/DSC_4456.jpg" class="card-img-top" alt="sva_hostel">
+         </a>
+        </div>
+         
+                                            <!--day-2-->
+        
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+          <a href="img/gallery/admission-2-day/DSC05863.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+          <img src="img/gallery/admission-2-day/DSC05863.jpg" class="card-img-top" alt="sva_hostel">
+         </a>
+        </div>
+        
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-2-day/DSC05870.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-2-day/DSC05870.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+          <a href="img/gallery/admission-2-day/DSC05894.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+          <img src="img/gallery/admission-2-day/DSC05894.jpg" class="card-img-top" alt="sva_hostel">
+         </a>
+        </div>
+        
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-2-day/DSC05940.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-2-day/DSC05940.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+                
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-2-day/DSC05949.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-2-day/DSC05949.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+          <a href="img/gallery/admission-2-day/DSC05952.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+          <img src="img/gallery/admission-2-day/DSC05952.jpg" class="card-img-top" alt="sva_hostel">
+         </a>
+        </div>
+        
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-2-day/DSC05968.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-2-day/DSC05968.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+                
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-2-day/DSC05980..jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-2-day/DSC05980.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+          <a href="img/gallery/admission-2-day/DSC06001.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+          <img src="img/gallery/admission-2-day/DSC06001.jpg" class="card-img-top" alt="sva_hostel">
+         </a>
+        </div>
+        
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-2-day/DSC06004.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-2-day/DSC06004.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+                
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter induction">
+            <a href="img/gallery/admission-2-day/DSC06058.jpg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/admission-2-day/DSC06058.jpg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+          
+         
+        
+                               <!--Dahi Handi Celebration-->
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 mt-5 filter dahi">
+            <a href="img/gallery/Dahi Handi Celebration/dahi-handi-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Dahi Handi Celebration/dahi-handi-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+                
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 mt-5 filter dahi">
+            <a href="img/gallery/Dahi Handi Celebration/dahi-handi-02.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Dahi Handi Celebration/dahi-handi-02.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+          
+         
+        <!--Ganpati Celebration-->
+        
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 mt-5 filter ganpati">
+            <a href="img/gallery/Ganpati Celebration/Ganpati Celebration-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Ganpati Celebration/Ganpati Celebration-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+                
+          <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 mt-5 filter ganpati">
+            <a href="img/gallery/Ganpati Celebration/Ganpati Celebration-02.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Ganpati Celebration/Ganpati Celebration-02.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
+        
+        
+                          <!--Postal Day Celebration-->
+                          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 mt-5 filter postal">
+            <a href="img/gallery/National Postal Day/Postal-Day-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/National Postal Day/Postal-Day-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+          </div>
 
-           
+                              <!--Morning Exercise-->
+                              
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 mt-5 filter morning">
+             <a href="img/gallery/Morning Exercise/Morning Exercise-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Morning Exercise/Morning Exercise-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 mt-5 filter morning">
+             <a href="img/gallery/Morning Exercise/Morning Exercise-02.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Morning Exercise/Morning Exercise-02.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+          
+        <!-- <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 mt-5 filter morning">-->
+        <!--  <a href="img/Hostel/sva_hostel_04.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">-->
+        <!--  <img src="img/Hostel/sva_hostel_04.JPG" class="card-img-top" alt="sva_hostel">-->
+        <!-- </a>-->
+        <!--</div>-->
+        
+                            <!--Art workshop-->
+                            
+                            
+                            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter art-1 mt-5">
+           <a href="img/gallery/Art workshop Theater/art-04.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper"> 
+            <img src="img/gallery/Art workshop Theater/art-04.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+      
+                            
+                            
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter art-1 mt-5">
+           <a href="img/gallery/Art workshop Theater/art-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Art workshop Theater/art-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter art-1 mt-5">
+           <a href="img/gallery/Art workshop Theater/art-02.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Art workshop Theater/art-02.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter art-1">
+          <a href="img/gallery/Art workshop Theater/art-03.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Art workshop Theater/art-03.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        
+            
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter art-1">
+          <a href="img/gallery/Art workshop Theater/art-05.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Art workshop Theater/art-05.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        
+        
+        
+                      <!--Fireless cooking competition-->
+                      
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter fireless mt-5">
+            <a href="img/gallery/Fire less cooking competition/ cooking-competition-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Fire less cooking competition/ cooking-competition-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter fireless mt-5">
+            <a href="img/gallery/Fire less cooking competition/ cooking-competition-02.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Fire less cooking competition/ cooking-competition-02.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter fireless mt-5">
+          <a href="img/gallery/Fire less cooking competition/ cooking-competition-03.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Fire less cooking competition/ cooking-competition-03.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        
+        
+                       <!--Skit competition-->
+                       <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter skit mt-5">
+            <a href="img/gallery/skit Competition/skit-Competition-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/skit Competition/skit-Competition-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter skit mt-5">
+            <a href="img/gallery/skit Competition/skit-Competition-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/skit Competition/skit-Competition-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter skit mt-5">
+            <a href="img/gallery/skit Competition/skit-Competition-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/skit Competition/skit-Competition-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter skit">
+            <a href="img/gallery/skit Competition/skit-Competition-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/skit Competition/skit-Competition-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        <!--<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter skit">-->
+        <!--    <a href="img/gallery/skit Competition/ skit-Competition-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">-->
+        <!--    <img src="img/gallery/skit Competition/ skit-Competition-01.jpeg" class="card-img-top" alt="sva_hostel">-->
+        <!--  </a>-->
+        <!--</div>-->
+                
+         
+        
+        <!--Dance competition-->
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dance mt-5">
+            <a href="img/gallery/Dance Competition/Dance-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Dance Competition/Dance-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+        <!-- <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dance">-->
+        <!--    <a href="img/Hostel/sva_hostel_03.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">-->
+        <!--    <img src="img/Hostel/sva_hostel_03.JPG" class="card-img-top" alt="sva_hostel">-->
+        <!--  </a>-->
+        <!-- </div>-->
+          
+        <!-- <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter dance">-->
+        <!--  <a href="img/Hostel/sva_hostel_04.JPG" data-lightbox="roadtrip" class="image-placeholder-wrapper">-->
+        <!--  <img src="img/Hostel/sva_hostel_04.JPG" class="card-img-top" alt="sva_hostel">-->
+        <!-- </a>-->
+        <!--</div>-->
+        
+       <!--Singing Competition-->
+       <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter singing mt-5">
+             <a href="img/gallery/Singing Competition/Singing-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Singing Competition/Singing-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter singing mt-5">
+            <a href="img/gallery/Singing Competition/Singing-02.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Singing Competition/Singing-02.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter singing mt-5">
+          <a href="img/gallery/Singing Competition/Singing-03.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Singing Competition/Singing-03.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter singing">
+          <a href="img/gallery/Singing Competition/Singing-04.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/Singing Competition/Singing-04.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+       
+        <!--School Election-->
+        
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school mt-5">
+            <a href="img/gallery/School Election 2023-2024/School-Election-01.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-01.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school mt-5">
+            <a href="img/gallery/School Election 2023-2024/School-Election-02.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-02.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school mt-5">
+         <a href="img/gallery/School Election 2023-2024/School-Election-03.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-03.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+            <a href="img/gallery/School Election 2023-2024/School-Election-04.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-04.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+            <a href="img/gallery/School Election 2023-2024/School-Election-05.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-05.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+         
+         <!--<div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">-->
+         <!--    <a href="img/gallery/School Election 2023-2024/School-Election-06.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper" >-->
+         <!--    <img src="img/gallery/School Election 2023-2024/School-Election-06.jpeg" class="card-img-top" alt="sva_hostel">-->
+         <!--    </a>-->
+         <!--</div>-->
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+         <a href="img/gallery/School Election 2023-2024/School-Election-06.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-06.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+            <a href="img/gallery/School Election 2023-2024/School-Election-07.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-07.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+            <a href="img/gallery/School Election 2023-2024/School-Election-08.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-08.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+         <a href="img/gallery/School Election 2023-2024/School-Election-09.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-09.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+            <a href="img/gallery/School Election 2023-2024/School-Election-10.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-10.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+            <a href="img/gallery/School Election 2023-2024/School-Election-11.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-11.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+          
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+         <a href="img/gallery/School Election 2023-2024/School-Election-12.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-12.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+        
+        <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+            <a href="img/gallery/School Election 2023-2024/School-Election-13.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-13.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+        </div>
+                
+         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">
+            <a href="img/gallery/School Election 2023-2024/School-Election-14.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">
+            <img src="img/gallery/School Election 2023-2024/School-Election-14.jpeg" class="card-img-top" alt="sva_hostel">
+          </a>
+         </div>
+          
+        <!-- <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter school">-->
+        <!-- <a href="img/gallery/Singing Competition/Singing-04.jpeg" data-lightbox="roadtrip" class="image-placeholder-wrapper">-->
+        <!--    <img src="img/gallery/Singing Competition/Singing-04.jpeg" class="card-img-top" alt="sva_hostel">-->
+        <!--  </a>-->
+        <!--</div>-->
+        </div>
         </div>
     </div>
 
@@ -387,7 +932,7 @@ Free Education, Hostels, Schools In Lonavala, Hostels In Lonavala" name="keyword
       <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
         ><i class="bi bi-arrow-up"></i
       ></a>
-    </div>
+    <!--</div>-->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
